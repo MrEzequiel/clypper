@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <title>Clypper</title>
+  </head>
+  <body>
+    <div class="drag">
+      <img src="../assets/icon.png" />
+      <h1>Clypper</h1>
+    </div>
+
+    <main>
+      <h2 class="title">Save your copies! <span>😍</span></h2>
+
+      <form class="form-copy">
+        <textarea placeholder="Paste what you want to save..."></textarea>
+        <button type="submit">+</button>
+      </form>
+
+      <section id="copy"></section>
+    </main>
+
+    <div id="modal">
+      <h2>Want to save your clipboard text?</h2>
+      <div class="buttons">
+        <button class="btn-save" data-done>
+          <span class="material-icons"> done </span>
+        </button>
+        <button class="btn-cancel" data-close>
+          <span class="material-icons"> close </span>
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+@import url(./main.css);
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+  /* hack to rem = px */
+  font-size: 62.5%;
+}
+
+body {
+  background: #f7f7f7;
+  color: #0e0e0e;
+  font: 400 1.6rem 'Work Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3fcfc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9be2e2;
+  border-top: 30px solid #f3fcfc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1adada;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  outline: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul {
+  font-size: 1em;
+  font-weight: normal;
+}

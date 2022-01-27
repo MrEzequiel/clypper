@@ -1,0 +1,187 @@
+.drag {
+  -webkit-app-region: drag;
+  width: 100%;
+  height: 30px;
+  background: #f3fcfc;
+
+  padding: 5px 15px;
+
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  gap: 5px;
+}
+
+.drag h1 {
+  font-weight: 500;
+}
+
+main {
+  margin-top: 20px;
+  padding: 0 15px;
+}
+
+main .title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.title span {
+  font-weight: normal;
+}
+
+.form-copy {
+  width: 100%;
+  height: 75px;
+  border: 3px dotted #9be2e2;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form-copy textarea {
+  background: transparent;
+  resize: none;
+  height: 100%;
+  flex: 1;
+}
+
+.form-copy button {
+  cursor: pointer;
+  flex-shrink: 0;
+  min-width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: #1adada;
+  color: #166969;
+  font-size: 2.2rem;
+  box-shadow: 0 4px 4px -1px rgba(0, 0, 0, 0.1);
+  transition: all 500ms ease;
+}
+
+.form-copy button:hover {
+  box-shadow: none;
+  transform: scale(0.95);
+}
+
+#copy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#copy .copy-item {
+  border: 2px solid #1adada;
+  padding: 10px;
+  animation: showUp 500ms ease;
+}
+
+.copy-item p {
+  white-space: break-spaces;
+  user-select: all;
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+}
+
+.copy-item .action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.action button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 3px;
+
+  background: #dedede;
+  color: #166969;
+}
+
+.action button span {
+  font-size: 1.6rem;
+}
+
+.action button:first-child {
+  background: #1adada;
+}
+
+#modal {
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  background: #f3fcfc;
+  border-radius: 5px;
+  box-shadow: 0 8px 8px -2px rgba(0, 0, 0, 0.1);
+  outline: 5px solid #1adada;
+  padding: 10px;
+  width: 80%;
+  transition: all 500ms ease;
+}
+
+#modal.active {
+  opacity: 1;
+  visibility: visible;
+  bottom: 50px;
+}
+
+#modal h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+#modal .buttons {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#modal .buttons button {
+  cursor: pointer;
+  background: #1adada;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+#modal .buttons button span {
+  font-size: 1.6rem;
+  color: #166969;
+}
+
+#modal .buttons button:last-child {
+  background: #dedede;
+}
